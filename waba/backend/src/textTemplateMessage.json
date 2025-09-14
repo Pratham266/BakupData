@@ -1,0 +1,97 @@
+[
+    {
+        "messaging_product": "whatsapp",
+        "to": "919998746560",
+        "type": "template",
+        "template": {
+            "name": "seasonal_promotion",
+            "language": {
+                "code": "en_US"
+            },
+            "components": [
+                {
+                    "type": "header",
+                    "parameters": [
+                        {
+                            "type": "text",
+                            "text": "John"
+                        }
+                    ]
+                },
+                {
+                    "type": "body",
+                    "parameters": [
+                        {
+                            "type": "text",
+                            "text": "the end of September"
+                        },
+                        {
+                            "type": "text",
+                            "text": "30OFF"
+                        },
+                        {
+                            "type": "text",
+                            "text": "30%"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "messaging_product": "whatsapp",
+        "to": "919998746560",
+        "type": "template",
+        "template": {
+            "name": "offer_30",
+            "language": {
+                "code": "en"
+            },
+            "components": [
+                {
+                    "type": "header",
+                    "parameters": [
+                        {
+                            "type": "image",
+                            "image": {
+                                "link": "https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "body",
+                    "parameters": [
+                        {
+                            "type": "text",
+                            "parameter_name": "customer_name",
+                            "text": "Pratham"
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "sub_type": "COPY_CODE",
+                    "index": "0",
+                    "parameters": [
+                        {
+                            "type": "payload",
+                            "payload": "OFFERRAOC30"
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "sub_type": "QUICK_REPLY",
+                    "index": "1",
+                    "parameters": [
+                        {
+                            "type": "payload",
+                            "payload": "OFFERRAOC30"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,35 @@
+{
+    "name": "waba-fullstack",
+    "version": "1.0.0",
+    "description": "Waba Full-Stack Application with React Frontend and Node.js Backend",
+    "scripts": {
+        "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+        "dev:frontend": "cd frontend && npm run dev",
+        "dev:backend": "cd backend && npm run dev",
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "build:frontend": "cd frontend && npm run build",
+        "build:backend": "cd backend && npm run build",
+        "build": "npm run build:backend && npm run build:frontend",
+        "start:backend": "cd backend && npm start",
+        "clean": "cd frontend && rm -rf dist && cd ../backend && rm -rf dist",
+        "lint:frontend": "cd frontend && npm run lint",
+        "lint:backend": "cd backend && npm run lint",
+        "lint": "npm run lint:backend && npm run lint:frontend"
+    },
+    "keywords": [
+        "fullstack",
+        "react",
+        "nodejs",
+        "typescript",
+        "mongodb",
+        "express",
+        "vite",
+        "tailwind",
+        "redux"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

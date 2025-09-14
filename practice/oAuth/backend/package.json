@@ -1,0 +1,19 @@
+{
+  "name": "authbackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "axios": "^1.7.9",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^13.0.1",
+    "mongodb": "^6.11.0",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  }
+}
